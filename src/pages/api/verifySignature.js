@@ -36,7 +36,7 @@ const checkNFTOwnership = async (address, contractAddress, provider) => {
     
     const contract = new ethers.Contract(contractAddress, abi, provider);
     const balance = await contract.balanceOf(address);
-    return balance.gt(0); 
+    return balance; 
   } catch (error) {
     console.error("Error checking NFT ownership:", error);
     return false;

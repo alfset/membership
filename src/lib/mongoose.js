@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = "mongodb://127.0.0.1:27017/(DBName)";
+const MONGODB_URI = "mongodb://";
 
 if (!MONGODB_URI) {
   throw new Error("DB URI is invalid");
